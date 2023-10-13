@@ -8,7 +8,7 @@ app = Flask(__name__) # initializing a flask app
 
 @app.route('/',methods=['GET'])  # route to display the home page
 def homePage():
-    # print('Hello, please enter your values')
+    print('Hello, please enter your values')
     return render_template("index.html")
 
 
