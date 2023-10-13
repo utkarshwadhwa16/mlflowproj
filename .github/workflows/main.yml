@@ -88,7 +88,7 @@ jobs:
          
       - name: Stop and remove container if running
         run: |
-         docker stop mlflowproj || true && docker --rm mlflowproj || true
+         docker rm -f mlflowproj || true
        
       - name: Run Docker Image to serve users
         run: |
